@@ -2,6 +2,6 @@
     <string name="app_name">Photograph</string>
     <string name="camera_permission_confirmation">This app demonstrates the usage of CameraView. In order to do that, it needs permission to access camera.</string>
     <string name="camera_permission_not_granted">Camera app cannot do anything without camera permission.</string>
-    <string name="sdcard_write_permission_not_granted">cannot do anything without write sdcard permission</string>
-    <string name="read_device_permission_not_granted">cannot do anything without read_device permission</string>
+    <string name="sdcard_write_permission_not_granted">without the right to write the SD card will not save the picture</string>
+    <string name="read_device_permission_not_granted">The program needs the device code as a unique identification</string>
 </resources>

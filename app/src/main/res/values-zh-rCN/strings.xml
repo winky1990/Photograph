@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">照相</string>
+    <string name="camera_permission_confirmation">这个程序有照相功能，因此需要照相机权限</string>
+    <string name="camera_permission_not_granted">没有摄像机许可，程序无法执行任何操作</string>
+    <string name="sdcard_write_permission_not_granted">没有写SD卡权限将无法保存图片</string>
+    <string name="read_device_permission_not_granted">程序需要设备码作为唯一识别</string>
+</resources>

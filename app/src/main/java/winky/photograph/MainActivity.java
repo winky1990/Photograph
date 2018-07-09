@@ -153,10 +153,9 @@ public class MainActivity extends AppCompatActivity implements AspectRatioFragme
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.take_picture:
-//                    if (cameraView != null) {
-//                        cameraView.takePicture();
-//                    }
-                    VerificationDialog.newInstance().show(getSupportFragmentManager(), "device_dialog");
+                    if (cameraView != null) {
+                        cameraView.takePicture();
+                    }
                     break;
                 case R.id.to_picture:
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("content://media/internal/images/media"));
@@ -269,11 +268,12 @@ public class MainActivity extends AppCompatActivity implements AspectRatioFragme
 //                }
 //                return true;
             case R.id.switch_flash:
-                if (cameraView != null) {
-                    currentFlash = (currentFlash + 1) % FLASH_OPTIONS.length;
-                    item.setIcon(FLASH_ICONS[currentFlash]);
-                    cameraView.setFlash(FLASH_OPTIONS[currentFlash]);
-                }
+//                if (cameraView != null) {
+//                    currentFlash = (currentFlash + 1) % FLASH_OPTIONS.length;
+//                    item.setIcon(FLASH_ICONS[currentFlash]);
+//                    cameraView.setFlash(FLASH_OPTIONS[currentFlash]);
+//                }
+                VerificationDialog.newInstance().show(getSupportFragmentManager(), "device_dialog");
                 return true;
             case R.id.switch_camera:
                 if (cameraView != null) {
