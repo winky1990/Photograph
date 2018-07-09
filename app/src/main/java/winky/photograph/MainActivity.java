@@ -24,6 +24,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.darsh.multipleimageselect.activities.AlbumSelectActivity;
+import com.darsh.multipleimageselect.helpers.Constants;
 import com.google.android.cameraview.AspectRatio;
 import com.google.android.cameraview.CameraView;
 
@@ -158,7 +160,10 @@ public class MainActivity extends AppCompatActivity implements AspectRatioFragme
                     }
                     break;
                 case R.id.to_picture:
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("content://media/internal/images/media"));
+//                    Intent intent = new Intent(MainActivity.this, AlbumSelectActivity.class);
+//                    intent.putExtra(Constants.INTENT_EXTRA_LIMIT, 5);
+//                    startActivity(intent);
+                    Intent intent = new Intent(Intent.ACTION_VIEW, MediaStore.Images.Media.INTERNAL_CONTENT_URI);
                     startActivity(intent);
                     break;
             }
